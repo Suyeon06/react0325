@@ -36,7 +36,7 @@ function App() {
       </div>
 
       {/* 중간 섹션 - 레슨 카드들 */}
-      <div className=" bg-white p-6 rounded-lg shadow-lg">
+      <div className="flex flex-col bg-white p-6 rounded-lg shadow-lg gap-4">
         <div className="grid grid-cols-3 gap-4">
           <div className="bg-yellow-100 p-4 rounded-lg">
             <div className="text-center font-semibold text-gray-800">Beginner</div>
@@ -54,8 +54,8 @@ function App() {
           </div>
         </div>
 
-        <div>
-          <button className="w-full bg-yellow-100 text-black py-2 rounded-lg mt-4">Learn more...</button>
+        <div className="flex-1">
+          <button className="w-full h-full bg-yellow-100 text-black py-2 rounded-lg">Learn more...</button>
         </div>
       </div>
 
@@ -71,11 +71,7 @@ function App() {
           <ThirdColumn />
         </div>
 
-
-
-
-        <button className="w-full bg-gray-200 text-black py-2 rounded-lg mt-4">Watch next lessons</button>
-
+          <button className="w-full bg-gray-200 text-black py-2 rounded-lg mt-4">Watch next lessons</button>
       </div>
     </div>
   )
