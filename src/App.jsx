@@ -46,27 +46,43 @@ function App() {
 <div className="flex gap-4">
 
   {/* 중간 섹션 - 레슨 카드들 */}
-  <div className="flex flex-col bg-white p-6 rounded-lg shadow-lg gap-4 w-2/3">
+  <div className="flex flex-col bg-gray p-6 rounded-lg shadow-lg gap-4 w-2/3">
     <div className="grid grid-cols-3 gap-4">
-      <div className="bg-yellow-100 p-4 rounded-lg">
-        <div className="text-center font-semibold text-gray-800">Beginner</div>
-        <div className="mt-2 text-center text-gray-600">3 lessons</div>
+
+      <div className="flex flex-col bg-white p-4 rounded-lg gap-2">
+        <div className="bg-yellow-200 p-4 rounded-lg">
+          <div className="text-center font-semibold text-gray-800">Beginner</div>
+        </div>
+        
+        <div className="bg-gray-200 p-4 rounded-lg">
+          <div className="mt-1 text-xs text-center text-gray-600">3 lessons</div>
+        </div>
       </div>
 
-      <div className="bg-yellow-100 p-4 rounded-lg">
-        <div className="text-center font-semibold text-gray-800">Beginner</div>
-        <div className="mt-2 text-center text-gray-600">3 lessons</div>
+      <div className="flex flex-col bg-white p-4 rounded-lg gap-2">
+        <div className="bg-yellow-200 p-4 rounded-lg">
+          <div className="text-center font-semibold text-gray-800">Beginner</div>
+        </div>
+        
+        <div className="bg-gray-200 p-4 rounded-lg">
+          <div className="mt-1 text-xs text-center text-gray-600">3 lessons</div>
+        </div>
       </div>
 
-      <div className="bg-yellow-100 p-4 rounded-lg">
-        <div className="text-center font-semibold text-gray-800">Beginner</div>
-        <div className="mt-2 text-center text-gray-600">3 lessons</div>
+      <div className="flex flex-col bg-white p-4 rounded-lg gap-2">
+        <div className="bg-yellow-200 p-4 rounded-lg">
+          <div className="text-center font-semibold text-gray-800">Beginner</div>
+        </div>
+        
+        <div className="bg-gray-200 p-4 rounded-lg">
+          <div className="mt-1 text-xs text-center text-gray-600">3 lessons</div>
+        </div>
       </div>
     </div>
 
     <div className="flex-1">
-        <button className="w-full h-full bg-yellow-100 text-black py-2 rounded-lg">Learn more...</button>
-      </div>
+      <button className="w-full h-full bg-yellow-100 text-black py-2 rounded-lg">Learn more...</button>
+    </div>
   </div>
 
   {/* 오른쪽 섹션 - Introduce 버튼과 체크박스 */}
