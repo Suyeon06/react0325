@@ -47,9 +47,9 @@ function App() {
 
   {/* 중간 섹션 - 레슨 카드들 */}
   <div className="flex flex-col bg-gray p-6 rounded-lg shadow-lg gap-4 w-2/3">
-    <div className="grid grid-cols-3 gap-4">
+    <div className="flex grid grid-cols-3 gap-4 h-40">
 
-      <div className="flex flex-col bg-white p-4 rounded-lg gap-2">
+    <div className="flex flex-col bg-white p-4 rounded-lg gap-2">
         <div className="bg-yellow-200 p-4 rounded-lg">
           <div className="text-center font-semibold text-gray-800">Beginner</div>
         </div>
