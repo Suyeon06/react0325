@@ -35,45 +35,59 @@ function App() {
         </div>
       </div>
 
-      {/* 중간 섹션 - 레슨 카드들 */}
-      <div className="flex flex-col bg-white p-6 rounded-lg shadow-lg gap-4">
-        <div className="grid grid-cols-3 gap-4">
-          <div className="bg-yellow-100 p-4 rounded-lg">
-            <div className="text-center font-semibold text-gray-800">Beginner</div>
-            <div className="mt-2 text-center text-gray-600">3 lessons</div>
-          </div>
+      <div className="flex flex-col gap-4 bg-gray-100 p-6 min-h-screen">
 
-          <div className="bg-yellow-100 p-4 rounded-lg">
-            <div className="text-center font-semibold text-gray-800">Beginner</div>
-            <div className="mt-2 text-center text-gray-600">3 lessons</div>
-          </div>
+{/* 상단 섹션 - 추가된 칼럼 */}
+<div className="bg-gray-200 p-4 rounded-lg text-left font-semibold text-gray-800">
+  BE STRICT!
+</div>
 
-          <div className="bg-yellow-100 p-4 rounded-lg">
-            <div className="text-center font-semibold text-gray-800">Beginner</div>
-            <div className="mt-2 text-center text-gray-600">3 lessons</div>
-          </div>
-        </div>
+{/* 중간 + 오른쪽 섹션을 감싸는 Flex 컨테이너 추가 */}
+<div className="flex gap-4">
 
-        <div className="flex-1">
-          <button className="w-full h-full bg-yellow-100 text-black py-2 rounded-lg">Learn more...</button>
-        </div>
+  {/* 중간 섹션 - 레슨 카드들 */}
+  <div className="flex flex-col bg-white p-6 rounded-lg shadow-lg gap-4 w-2/3">
+    <div className="grid grid-cols-3 gap-4">
+      <div className="bg-yellow-100 p-4 rounded-lg">
+        <div className="text-center font-semibold text-gray-800">Beginner</div>
+        <div className="mt-2 text-center text-gray-600">3 lessons</div>
       </div>
 
-      {/* 오른쪽 섹션 - Introduce 버튼과 체크박스 */}
-      <div className=" bg-white p-6 rounded-lg shadow-lg">
-        <div className="space-y-4">
+      <div className="bg-yellow-100 p-4 rounded-lg">
+        <div className="text-center font-semibold text-gray-800">Beginner</div>
+        <div className="mt-2 text-center text-gray-600">3 lessons</div>
+      </div>
 
-          <ThirdColumn />
-          <ThirdColumn />
-          <ThirdColumn />
-          <ThirdColumn />
-          <ThirdColumn />
-          <ThirdColumn />
-        </div>
-
-          <button className="w-full bg-gray-200 text-black py-2 rounded-lg mt-4">Watch next lessons</button>
+      <div className="bg-yellow-100 p-4 rounded-lg">
+        <div className="text-center font-semibold text-gray-800">Beginner</div>
+        <div className="mt-2 text-center text-gray-600">3 lessons</div>
       </div>
     </div>
+
+    <div className="flex-1">
+        <button className="w-full h-full bg-yellow-100 text-black py-2 rounded-lg">Learn more...</button>
+      </div>
+  </div>
+
+  {/* 오른쪽 섹션 - Introduce 버튼과 체크박스 */}
+  <div className="bg-white p-6 rounded-lg shadow-lg w-1/3">
+    <div className="space-y-4">
+      <ThirdColumn />
+      <ThirdColumn />
+      <ThirdColumn />
+      <ThirdColumn />
+      <ThirdColumn />
+      <ThirdColumn />
+    </div>
+
+    <button className="w-full bg-gray-200 text-black py-2 rounded-lg mt-4">
+      Watch next lessons
+    </button>
+  </div>
+</div>
+</div>
+
+</div>
   )
 }
 
